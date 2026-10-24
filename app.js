@@ -3,7 +3,7 @@
 
 // GANTI dengan URL Web App Apps Script Anda.
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwuF6Yc_u30vecJjcmymDACYS3XK9zOLYnch4X5r2NOETo3-SEu2-00fzQrNSPZGXwo/exec";
+  "https://script.google.com/macros/s/AKfycbxMet50TlgWeJ3cj058nB5z4ij70VKvXT3eTPwEHGvf7OAwORZ3gjQSEMV5K53Kqv0g/exec";
 
 const CHANNEL = "KUSENPRO_BRIDGE";
 const bridge = document.getElementById("backendBridge");
