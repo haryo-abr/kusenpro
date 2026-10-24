@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c32">
+  <meta name="description" content="KusenPro CRM untuk pengelolaan customer dan pesanan.">
+  <title>KusenPro CRM</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="brand-panel">
+      <div class="brand-mark">K</div>
+      <p class="eyebrow">CUSTOMER & ORDER MANAGEMENT</p>
+      <h1>KusenPro</h1>
+      <p class="brand-description">
+        Kelola pesanan, customer, dan pembayaran dalam satu aplikasi.
+      </p>
+      <div class="brand-footer">KusenPro CRM · Business Management</div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-content">
+        <div class="mobile-brand">
+          <span class="brand-mark small">K</span>
+          <strong>KusenPro</strong>
+        </div>
+
+        <p class="eyebrow">SELAMAT DATANG</p>
+        <h2>Masuk ke akun Anda</h2>
+        <p class="muted">Gunakan akun karyawan yang telah terdaftar.</p>
+
+        <form id="loginForm">
+          <label for="username">Username</label>
+          <input id="username" name="username" autocomplete="username"
+                 required maxlength="40" placeholder="Masukkan username">
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password"
+                 autocomplete="current-password" required
+                 maxlength="200" placeholder="Masukkan password">
+
+          <button id="loginButton" type="submit">Masuk</button>
+        </form>
+
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+
+        <section id="dashboard" hidden>
+          <div class="welcome-card">
+            <p class="muted">Login berhasil</p>
+            <h3 id="welcomeName"></h3>
+            <p id="welcomeRole" class="muted"></p>
+            <p class="muted">Dashboard CRM akan kita bangun pada tahap berikutnya.</p>
+            <button id="logoutButton" class="secondary-button" type="button">
+              Keluar
+            </button>
+          </div>
+        </section>
+
+        <p class="security-note">
+          Akses dibatasi untuk karyawan yang memiliki akun aktif.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <iframe id="backendBridge" title="Koneksi backend"
+          aria-hidden="true" tabindex="-1"></iframe>
+
+  <script src="./app.js"></script>
+</body>
+</html>
